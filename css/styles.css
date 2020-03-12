@@ -55,6 +55,7 @@
         margin-left: 2em;
       }
 
+      
 
   }
 
@@ -104,6 +105,7 @@
     padding-bottom: 2em;
     color: var(--white);
     text-align: left;
+    margin-left: 14em;
   }
   .hero-content i {
     font-size: 2.5em;
@@ -116,8 +118,7 @@
     display: inline-block;
     color: var(--white);
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 700;
     border: none;
   }
