@@ -18,24 +18,106 @@
     font-family: Montserrat (Light, Regular, Medium, Bold);
   }
   .header nav{
-      margin: 0.9em 0;
+      margin:0;
       padding: 1em 0;
-      max-width: 63em;
+      max-width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
+      background-color: var(--primary);
   }
+  
+  div .secondary
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+  }
+
   @media (min-width: 768px){
       .header nav{
           flex-direction: row;
           justify-content: space-evenly;
       }
+      
+      div .secondary{
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 2em 0;
+
+      }
+
+      div .secondary :last-of-type{
+        margin-left: 1.5em;
+      }
+      .secondary a{
+        margin-left: 2em;
+      }
+
 
   }
 
-  a {
+  .header a {
     font-size: 1.6em;
     text-decoration: none;
-    color: cornflowerblue;    
-    margin: 0.5em;
+    color:var(--white);    
+  }
+  h1{
+  color: var(--white);
+
+  }
+  h2{
+    color: var(--white);
+  
+    }
+  h3{
+      color: var(--white);
+    
+    }
+  .header i{
+    color: var(--secondary);
+    font-size: 7px;
+  }
+  
+  .hero{
+    height: 25em;
+    background-image: url(../imagenes/Path\ 2.png);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero::after {
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    padding-bottom: 2em;
+    color: var(--white);
+    text-align: left;
+  }
+  .hero-content i {
+    font-size: 2.5em;
+    color: var(--primary);
+  }
+  .button {
+    background-color: var(--secondary);
+    padding: 1em 3em;
+    border-radius: 0.3em;
+    display: inline-block;
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 700;
+    border: none;
   }
