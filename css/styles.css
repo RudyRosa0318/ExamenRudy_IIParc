@@ -1,0 +1,41 @@
+  :root {
+    --primary:#0264fb;
+    --secondary:#ffb03a;
+    --gray:#4b4b4b ;
+    --white: #ffffff;
+    --black: #000000;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  body {
+    font-family: Montserrat (Light, Regular, Medium, Bold);
+  }
+  .header nav{
+      margin: 0.9em 0;
+      padding: 1em 0;
+      max-width: 63em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  @media (min-width: 768px){
+      .header nav{
+          flex-direction: row;
+          justify-content: space-evenly;
+      }
+
+  }
+
+  a {
+    font-size: 1.6em;
+    text-decoration: none;
+    color: cornflowerblue;    
+    margin: 0.5em;
+  }
